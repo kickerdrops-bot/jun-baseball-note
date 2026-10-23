@@ -1,0 +1,12 @@
+[auth]
+site_url = "https://kickerdrops-bot.github.io/jun-baseball-note/"
+additional_redirect_urls = ["https://kickerdrops-bot.github.io/jun-baseball-note/"]
+enable_signup = false
+
+[auth.email]
+enable_signup = false
+enable_confirmations = true
+otp_expiry = 3600
+
+[functions.family-admin]
+verify_jwt = true

@@ -1,0 +1,22 @@
+{
+  "name": "jun-baseball-note",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ジュンの野球ノート — 家族限定で共有する野球の成長記録",
+  "engines": { "node": ">=22.12.0" },
+  "packageManager": "pnpm@11.25.0+sha512.5cde925b4f075f725eb71fbae18a42ffe784524789f19b61c731cb8721ec28aaee160e01a8d5af4fedb2a42cdbf300efe23db356b0d4a17b4d63e11f8ab7c956",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5178 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4178 --strictPort",
+    "test": "node --test tests/model/*.test.js tests/frontend/*.test.js",
+    "check": "pnpm test && pnpm build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}
